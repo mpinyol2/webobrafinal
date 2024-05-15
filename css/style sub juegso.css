@@ -1,0 +1,358 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.questrial-regular {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.card{
+	border: none;
+}
+.titulos{
+	padding-top: 30px;
+	width: 80%;
+	margin-left: 10%;
+	
+	font-family: var(--tipo);
+	margin-bottom: 35px !important;
+	font-weight: bold !important;
+
+}
+.titsec {
+	transform: translateY(-18px);
+	height: 7px;
+	font-size: clamp(2rem,5vw,2.5rem);
+}
+
+
+
+/*variables generales*/
+
+:root {
+  --colw:white; 
+  --colg: rgb(35, 33, 33);
+   --colr: #B62300;
+  --tipo: "Questrial", sans-serif ;
+  --tam: 2.5rem ;
+  --margenes: 
+  margin-left: 10%;
+	margin-top: 40px;
+	margin-bottom: 30px;;
+
+}
+/*color: var(--blue);*/
+
+
+
+.menu{
+	background-color: var(--colg)!important;
+	border-bottom-left-radius: 2em 2em;
+	border-bottom-right-radius: 2em 2em;
+	height: auto !important;
+	z-index: 10;
+}
+
+.menu>.container {
+flex-wrap: nowrap;
+}
+
+.menum{
+	border-color: white;
+}
+.logo1m{
+	border: none;
+	background-color: var(--colg) ;
+	margin-left: 10%;
+}
+.linksmenu{
+	font-family: var(--tipo);
+	color: var(--colw)!important;
+	height: auto;
+	
+	margin-right: 30px;
+
+}
+
+.iconoPropio {
+	background-image: url("../media/menu balnco.svg")!important;
+	background-size: cover;
+}
+
+.links{
+	transform: translateY(8px);
+	background-color: var(--colg);
+
+
+
+}
+
+.boton{
+	background-color: var(--colr) !important;
+/*	transform: translateY(18px);*/
+	border: none;
+	width: 140px;
+	height: 4rem;
+	font-family: var(--tipo);
+	margin-bottom: 8px;
+	font-style: 3rem !important;
+	border-radius: 1rem !important ;
+	margin-left: 20px;
+
+
+}
+
+
+
+.efecto{
+	display: inline-block;
+	transform: perspective(1px) translateZ(0px);
+}
+
+
+.efecto:hover,
+.efecto:focus,
+.efecto:active{
+	animation-name: efectoBoton ;
+	animation-duration: 1s;
+	animation-timing-function: ease-on-out;
+	animation-iteration-count: 1;
+}
+@keyframes efectoBoton{
+	17% {transform: translateY(8px);}
+	34% {transform: translateY(-6px);}
+	50% {transform: translateY(4px);}
+	67% {transform: translateY(-2px);}
+	84% {transform: translateY(1px);}
+	100% {transform: translateY(0px);}
+
+} 
+
+
+.iniciotex{
+	transform: translateY(6px);
+}
+
+.dropdown-item{display: flex;}
+
+
+
+@media (min-width: 991.98px) and (max-width: 3000px) { 
+
+.links{
+	transform: translateY(28px);
+	
+
+}
+.boton{
+	
+	transform: translateY(18px);
+	
+}
+.megalinks{
+/*	width: 100vw !important;*/
+/*	transform: translateX(-50%);*/
+}
+
+@keyframes efectoBoton{
+	17% {transform: translateY(26px);}
+	34% {transform: translateY(12px);}
+	50% {transform: translateY(22px);}
+	67% {transform: translateY(16px);}
+	84% {transform: translateY(19px);}
+	100% {transform: translateY(18px);}
+
+} 
+
+ }
+
+
+
+/* sec1*/
+.lineasec{
+	width: clamp(1rem,100vw,19rem);
+	height: 5px;
+}
+.lineasecd{
+	width: clamp(1rem,100vw,12rem);
+}
+.lineasec1{
+	margin-left: 24px;
+}
+.titulos1{
+	padding-top: 30px;
+	width: 80%;
+	margin-left: 10%;
+	
+	font-family: var(--tipo);
+	margin-bottom: 35px !important;
+	font-weight: bold !important;
+	/*position: relative;*/
+
+}
+.lineasec1{
+	/*position: absolute;*/
+}
+.titsec2 {
+	transform: translateY(-14px);
+	height: 7px;
+	font-size: clamp( 1rem, 8vw, 1.6rem);
+	/*position: absolute;*/
+}
+.titsec1 {
+	transform: translateY(18px);
+	height: 7px;
+	font-size: clamp( 1rem, 8vw, 1.6rem);
+	/*position: absolute;*/
+}
+
+
+.col{
+/*background-color: gold;*/
+height: auto;
+display: inline-block;
+
+}
+.delado{
+	height: auto;
+	width: 180px;
+	background-color: var(--colg);
+	transform: skew(-15deg, 0deg)	;
+	z-index: 1;
+	overflow: hidden;
+	margin: 0px auto;
+	border: solid;
+	
+}
+.juegoimg{
+	width: 285px;
+	height: auto;
+	transform: skew(15deg, 0deg)	;
+	background-size: cover;
+	background-position: center;
+	margin-left: -51px;
+	transition: all 0.4s;
+	
+
+
+
+}
+
+
+
+
+.juegoimg:hover {
+	transform: skew(15deg) scale(0.9) rotate(12deg);
+
+}
+.juegos{
+	padding: 30px;
+}
+
+
+
+
+
+
+/*footer*/
+.footer{
+	height: auto;
+	background-color: var(--colg);
+}
+.grupolink{
+	padding: 70px;
+}
+.col-2{
+	/*background-color: gold;*/
+	/*border-radius: 30px;*/
+	/*height: 50px;*/
+}
+.col-6{
+/*	background-color: gray;*/
+	/*border-radius: 30px;*/
+	/*height: 50px;*/
+}
+.fsob{
+	transform: translateY(15px);
+	font-size: clamp(0.7rem, 1vw, 1.5rem);
+	font-family: var(--tipo);
+	color: var(--colw);
+}
+.linksf{
+	height: auto;
+
+	/*margin-top: 50px;*/
+}
+.seplink{
+border-left: solid 2px white;
+}
+.condiciones{
+	text-decoration: none;
+	padding-left: 5px;
+	margin-right: 10px;
+	color: white;
+	
+}
+.linksf>a, .nianticnintendo>p{
+	display: block;
+	text-decoration: none;
+	font-family: var(--tipo);
+	color: rgba(255, 255, 255, .5);
+	font-size: clamp(0.6rem, 1vw, 1rem);
+}
+
+.linksf>hr{
+	color: var(--colw);
+/*	width: 20vw;*/
+}
+.linksfuter{
+/*	margin-top: 30px;*/
+/*	margin: 0px auto;*/
+/*margin-top: 4vw;*/
+}
+.logof{
+	width: 70%;
+}
+a>.linksf ,.redesl{
+	
+	width: clamp(1.4rem, 1vw, 4rem);	
+}
+
+@media (min-width: 0px) and (max-width: 1004px){
+	.cajalo{
+		display: none;
+	}
+}
+.logof{
+/*	margin-bottom: 100px!important;*/
+}
+
+.linksfuter{
+/*	width: clamp(1.rem, 2vw, 3rem);*/
+margin-top: 40px;
+}
+
+
+
+
+.botidimoas{
+	font-size: clamp(0.9rem,1vw 2rem);
+}
+
+.bordef{
+		border-radius: 15px;
+		width: auto;
+		height: auto;
+		background-color: white;
+		padding: 5px;
+}
+.footf{
+	padding-bottom: 30px;
+}
+.idio{
+	text-decoration: none;
+}
+.liniaf{
+	margin-top: -40px;
+}
